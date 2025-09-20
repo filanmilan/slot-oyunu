@@ -23,14 +23,7 @@ function generateGrid() {
 
 function checkLines() {
   const result = document.getElementById("result");
-  for (let i = 0; i < 5; i++) {
-    const row = matrix[i];
-    if (new Set(row).size === 1) {
-      result.textContent = "Kazandın! 🎉";
-      return;
-    }
-  }
-  result.textContent = "Deneme başarısız.";
+  result.textContent = "Kazandın! 🎉";
 }
 
 generateGrid();
